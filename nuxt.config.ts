@@ -7,5 +7,10 @@ export default defineNuxtConfig({
       enabled: true
     },
   },
-  modules: ["@ant-design-vue/nuxt"]
+  modules: ["@ant-design-vue/nuxt", '@nuxtjs/google-fonts', "nuxt-rating"],
+  googleFonts: {
+    families: {
+      Poppins: true
+    }
+  }
 })
