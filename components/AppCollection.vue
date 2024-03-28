@@ -1,10 +1,10 @@
 <template>
     <div class="container">
         <div class="title">
-            <h1>Coleção Verão</h1>
+            <h1>{{props.title}}</h1>
         </div>
         <div class="content">
-            <AppCard></AppCard>
+            <AppCard @click="navigate()"></AppCard>
             <AppCard></AppCard>
             <AppCard></AppCard>
             <AppCard></AppCard>
@@ -15,6 +15,23 @@
 
 <script lang="ts" setup>
 import AppCard from '/components/AppCard.vue';
+
+const props = defineProps({
+    title: String
+})
+
+function navigate(){
+
+    navigateTo({
+        path: '/chinelo-havaianas-tam-39',
+        query: {
+            page: 1,
+            sort: 'asc'
+        },
+    })
+
+}
+
 </script>
 
 <style scoped>

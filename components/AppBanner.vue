@@ -59,7 +59,7 @@
 }
 </style>
 
-<script lang="ts">
+<script setup lang="ts">
 import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons-vue';
 
 

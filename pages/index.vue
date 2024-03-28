@@ -1,12 +1,12 @@
 <template>
     <AppHeader></AppHeader>
     <AppBanner></AppBanner>
-    <AppCollection></AppCollection>
-    <AppCollection></AppCollection>
-    <AppCollection></AppCollection>
+    <AppCollection :title="'Moda Verão'"></AppCollection>
+    <AppCollection :title="'Moda Feia'"></AppCollection>
+    <AppCollection :title="'Moda Inverno'"></AppCollection>
 </template>
 
-<script>
+<script setup lang="ts">
 import AppHeader from "@/components/AppHeader.vue";
 import AppBanner from "~/components/AppBanner.vue";
 import AppCollection from "~/components/AppCollection.vue";
